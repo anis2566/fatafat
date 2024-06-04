@@ -10,7 +10,7 @@ export const NAVBAR_ITEMS: readonly NavbarItems[] = [
     },
     {
         label: "Responsible Gaming",
-        href: "/responsible-gamin"
+        href: "/responsible-gaming"
     },
     {
         label: "Contact Us",

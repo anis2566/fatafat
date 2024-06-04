@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 import { Button } from "../ui/button"
@@ -17,8 +16,8 @@ export const NavMenu = () => {
                 NAVBAR_ITEMS.map((item) => {
                     const active = item.href === pathname
                     return (
-                        <Button key={item.href} asChild variant="ghost" className={cn("hover:bg-transparent hover:text-amber-500", active && "text-amber-500")}>
-                            <Link href={item.href}>{item.label}</Link>
+                        <Button key={item.href} variant="ghost" className={cn("hover:bg-transparent hover:text-amber-500 text-white", active && "text-amber-500")}>
+                            {item.label}
                         </Button>
                     )
                 })

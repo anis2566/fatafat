@@ -1,7 +1,6 @@
 "use client"
 
 import { Menu } from "lucide-react"
-import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 import {
@@ -24,11 +23,11 @@ export const NavDrawer = () => {
     return (
         <Sheet>
             <SheetTrigger className="md:hidden" asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="text-white">
                     <Menu className="w-5 h-5" />
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[250px]">
+            <SheetContent side="left" className="w-[250px] bg-slate-900 text-white z-50 pt-20 md:pt-0">
                 <SheetHeader>
                     <div className="flex items-center gap-x-2 -mt-3">
                         <Logo />
@@ -42,8 +41,8 @@ export const NavDrawer = () => {
                             const active = item.href === pathname
                             return (
                                 <SheetClose asChild key={item.href}>
-                                    <Button variant="ghost" asChild className={cn("w-full justify-start", active && "bg-muted")}>
-                                        <Link href={item.href}>{item.label}</Link>
+                                    <Button variant="ghost" className={cn("w-full justify-start", active && "bg-muted")}>
+                                        {item.label}
                                     </Button>
                                 </SheetClose>
                             )
