@@ -12,7 +12,7 @@ export const Services = () => {
     return (
         <div className="w-full max-w-screen-xl mx-auto flex flex-col items-center space-y-16 px-4" id="trust">
             <p className="text-center text-2xl p-2 font-bold tracking-wide text-white flex flex-col md:flex-row">
-                India's First & Most Trusted Real Money
+                India&apos;s First & Most Trusted Real Money
                 <Highlight className="text-center text-2xl p-2 font-bold tracking-wide ml-2"> Fatafat Bazar App</Highlight>
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-4 gap-y-16 w-full">
